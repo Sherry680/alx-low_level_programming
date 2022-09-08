@@ -4,7 +4,7 @@
  * main- Main function
  *
  *
- * Return: Always 0 (Success)
+ * Return: return 0 always
  */
 int main(void)
 {
