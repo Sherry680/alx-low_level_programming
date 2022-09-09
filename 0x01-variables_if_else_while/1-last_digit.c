@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Print the last digit of random number
+ * main - print the last digit of random number
  *
  * Return: return 0
  */
@@ -19,11 +19,10 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, last);
 	}
+	else
 	{
-		else if (last > 5)
-	}
-	{
-		else (last < 6)
+		if(last > 5)
+		else if (last < 6)
 	}
 	return (0);
 }
