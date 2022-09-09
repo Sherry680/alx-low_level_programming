@@ -21,7 +21,7 @@ int main(void)
 	}
 	else
 	{
-		if(last > 5)
+		if (last > 5)
 		else if (last < 6)
 	}
 	return (0);
