@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 /**
  * main - main function in the task
  *
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19" 59);
+	write(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
