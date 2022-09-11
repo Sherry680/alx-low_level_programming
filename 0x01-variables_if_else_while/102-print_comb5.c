@@ -18,7 +18,7 @@ int main(void)
 			putchar((num2 / 10) + '0');
 			putchar((num2 % 10) + '0');
 
-			if (num1 / 10 !=9 || num1 % 10 !=8)
+			if (num1 / 10 != 9 || num1 % 10 != 8)
 			{
 				putchar(44);
 				putchar(32);
