@@ -2,6 +2,8 @@
 
 /**
  * times_table - print 9 times table starting with zero
+ *
+ * Return: returns nothing
  */
 void times_table(void)
 {
@@ -17,7 +19,7 @@ void times_table(void)
 
 			prod = num * mult;
 
-			if (prod <= 90)
+			if (prod <= 9)
 				_putchar(' ');
 			else
 				_putchar((prod / 10) + '0');
