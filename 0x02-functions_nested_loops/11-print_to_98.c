@@ -4,7 +4,8 @@
 /**
  * Print_to_98 - prints natural
  * numbers from n to 98
- * number to begin counting at
+ * @n:number to begin counting at
+ * Return: returns nothing
  */
 void print_to_98(int n)
 {
