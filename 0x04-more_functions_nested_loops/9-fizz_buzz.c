@@ -1,13 +1,34 @@
 #include <stdio.h>
 /**
- * main - multiples of 3 or 6
+ * main - Print either number or
+ * fizz or buzz or fizzbuzz
  *
- * Description: multiples between 0 and 100
  * Return: always (0)
  */
 int main(void)
 {
 	int a;
 
-	while (a++ < 100):q
+	while (a++ < 100)
 
+		if ((a % 3 == 0) && (a % 5 == 0))
+			printf("FizzBuzz ");
+
+		else if ((a % 3) == 0)
+			printf("Fizz ");
+
+		else if ((a % 5) == 0)
+		{
+			if (a != 100)
+				printf("Buzz ")
+
+			else
+				printf("Buzz");
+		}
+
+		else
+			printf("%d ", a);
+
+	printf("\n");
+	return (0);
+}
