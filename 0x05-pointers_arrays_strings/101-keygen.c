@@ -1,30 +1,30 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 /**
- * main - random password generater for 101-crackme
+ * main - random password generator for 101 crackme
  *
  * Return: always 0
  */
 int main(void)
 {
 	char a[100];
-	int x, n, i;
+	int r, n, x;
 
 	n = 0;
-	i = 0;
+	x = 0;
 	srand(time(NULL));
 	while (n < 2645)
 	{
-		x = rand() % 122;
-		if (x > 32)
+		r = rand() % 122;
+		if (r > 32)
 		{
-			a[i++] = x;
-			n += x;
+			a[x++] = r;
+			n += r;
 		}
 	}
-	a[i++] = (2772 - n);
-	a[i] = '\0';
-	printf("%s" , a);
-
+	a[x++] = (2772 - n);
+	a[x] = '\0';
+	printf("%s", a);
 	return (0);
 }
