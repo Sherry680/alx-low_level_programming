@@ -4,23 +4,20 @@
  * @str: input string
  *
  * Description: encodes a string into 1337
- * Return: (0)
+ * Return: encoded string
  */
 char *leet(char *str)
 {
 	int i = 0, j;
 
-	char 2[] = "aAeEoOtTlL";
-	char s1[] = "4433007711";
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	for (; str[i] != '\0'; i++)
+	while (str[++i])
 	{
-		for (j = 0; j <= 9; j++)
+		for (j = 0; j <= 7; j++)
 		{
-			if (s[j] == str[i])
-			{
-				str[i] = s1[j];
-			}
+			if (str[i] == leet[j] || str[i] - 32 == leet[j])
+				str[i] = j + '0';
 		}
 	}
 	return (str);
