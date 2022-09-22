@@ -6,7 +6,7 @@
  * Return: pointer to the resulting string
  */
 
-char *-strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int len = 0, a;
 
@@ -16,7 +16,7 @@ char *-strcat(char *dest, char *src)
 	for (a = 0; src[a] != '\0'; a++)
 	{
 		dest[len] = src[a];
-		len += 1;
+		len ++1;
 
 	}
 	dest[len] = '\0';
