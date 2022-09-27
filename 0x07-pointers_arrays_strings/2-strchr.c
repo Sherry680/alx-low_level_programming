@@ -8,10 +8,12 @@
 
 char *_strchr(char *s, char c)
 {
-	unsigned int a = 0;
+	int a;
 
-	for (; *(s + a) != '\0'; a++)
-		if (*(s + a) == c)
-			return (s + a);
-	return ('\0');
+	for (a = 0; (s[a] != c) && (s[a] != '\0'); a++)
+		;
+	if (s[a] == c)
+		return (s + a);
+	else
+		return (NULL);
 }
