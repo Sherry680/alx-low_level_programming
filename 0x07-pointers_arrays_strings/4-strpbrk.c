@@ -6,24 +6,19 @@
  *
  * Return: the string since the first round of accepted character
  */
-char *_strbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int i = 0, j;
+	int a;
 
-	while (s[i])
+	while (*s)
 	{
-		j = 0;
-		while (accept[j])
+		for (a = 0; accept[a]; a++)
 		{
-			if (s[i] == acccept[j])
-			{
-				s += i;
+			if (accept[a] == *s)
 				return (s);
-			}
-
-			j++;
 		}
-		i++;
+		s++;
 	}
+
 	return ('\0');
 }
