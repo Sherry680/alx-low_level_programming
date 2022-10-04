@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * _strdup - duplicate a string using malloc
  * @str: string to duplicate
